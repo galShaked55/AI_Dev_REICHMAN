@@ -1,0 +1,43 @@
+# ------------------------------
+# README – AI Development Assignment #3: Function Calling Agent
+# ------------------------------
+# ** Please See 'partners.txt' file for authors.
+# Description:
+# This assignment uses OpenAI's function calling to build an agent-based system that:
+#   1. Processes various file types (text, CSV) using 6 specialized tools
+#   2. Executes multi-step queries requiring different tools in sequence
+#   3. Generates outputs like JSON files, plots, and data analysis
+#   4. Automatically logs all tool usage and maintains execution history
+#
+# Required Files:
+#   - hw3.py                   # Main function calling agent application (entry point)
+#   - input.json               # Input file specifying query and resources
+#   - <query_name>.txt         # Query text file (name specified in input.json)
+#   - File resources           # Data files (names/descriptions in input.json)
+#
+# Setup Notes:
+# - The application expects all input files to be in the working directory specified and hardcoded in the main loop.
+# - By deafult, the application expect the initial 'input.json' to be located in the same directory as the 'hw3.py' code.
+# - Azure OpenAI credentials must be set as environment variables:
+#   * CLASS_OPENAI_API_KEY
+#   * SUBSCRIPTION_OPENAI_ENDPOINT_4o
+# - Furthermore, hw3.py expects credentials to be specified in file named 'environment_variables'
+#   Located in current directory.
+#
+# Output Files Generated:
+#   - <query_name>.log          # Detailed execution log with tool entry/exit
+#   - Generated Python programs # When plot generation tools are used
+#   - Generated PNG plots       # When visualization is requested
+#   - JSON files               # When data analysis outputs are requested
+#   - Text files               # When write_file tool is used
+#
+# ------------------------------
+# Direct Dependencies
+python-dotenv==1.1.0
+openai==1.74.0
+duckduckgo_search==8.0.3
+langchain==0.3.25
+
+# Runtime Dependencies (needed for generated Python programs)
+pandas==2.2.3
+matplotlib==3.10.3

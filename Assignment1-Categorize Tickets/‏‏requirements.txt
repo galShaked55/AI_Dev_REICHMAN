@@ -1,0 +1,46 @@
+# ------------------------------
+# README – AI Development Assignment #1
+# ------------------------------
+# **Please See 'partners.txt' for authors.
+# Description:
+# This assignment uses OpenAI models via Azure to:
+#   1. Determine whether software tickets contain single or multiple issues.
+#   2. Categorize single-issue tickets into 8 predefined types.
+#   3. Evaluate model accuracy using ground truth and generate detailed statistics.
+# Required Files:
+#   - hw1.py                    # Main script (entry point)
+#   - gt.py                     # Ground truth checker (used in Part 3)
+#   - environment_variables     # file with required Azure credentials
+#   - tkts_1.txt                # Input for Part 1
+#   - tkts_2.txt                # Input for Part 2 
+#
+# Setup Notes:
+# - Please note that the hw1.py script is expecting both input files and environment variables file to be located inside the
+#    same directory as it is located at.
+# - Input files names are hardcoded in the hw1.py script
+# - Thanks for your time evaluating our work :)
+#
+# Output Files Generated:
+#   - split.txt       # LLM predictions for split/no-split classification (Part 1)
+#   - categories.txt  # LLM predictions for category classification (Part 2)
+#   - statistics.txt  # Evaluation statistics summary (Part 3)
+# ------------------------------
+
+annotated-types==0.7.0
+anyio==4.9.0
+certifi==2025.1.31
+colorama==0.4.6
+distro==1.9.0
+h11==0.14.0
+httpcore==1.0.8
+httpx==0.28.1
+idna==3.10
+jiter==0.9.0
+openai==1.74.0
+pydantic==2.11.3
+pydantic_core==2.33.1
+python-dotenv==1.1.0
+sniffio==1.3.1
+tqdm==4.67.1
+typing-inspection==0.4.0
+typing_extensions==4.13.2
